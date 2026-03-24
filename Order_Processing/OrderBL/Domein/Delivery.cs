@@ -4,10 +4,9 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace OrderBL.DeliveryKlassen
+namespace OrderBL.Domein
 {
-    internal class ExpressDelivery
+    internal class Delivery
     {
-
     }
 }
