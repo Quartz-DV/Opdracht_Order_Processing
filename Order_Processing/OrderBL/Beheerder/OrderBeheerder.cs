@@ -5,6 +5,10 @@ using System.Text;
 using System.Threading.Tasks;
 
 namespace OrderBL.Beheerder {
-    internal class OrderBeheerder {
+    public class OrderBeheerder {
+
+        public void lidAanmaken()
+
+
     }
 }
