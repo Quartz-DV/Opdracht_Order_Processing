@@ -6,7 +6,8 @@ using System.Threading.Tasks;
 
 namespace OrderBL.Domein
 {
-    internal class Delivery
+    public class Delivery
     {
+        public bool IsExpressDelivery {  get; set; }
     }
 }
