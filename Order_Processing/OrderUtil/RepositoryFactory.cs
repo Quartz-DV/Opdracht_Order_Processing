@@ -1,5 +1,5 @@
 ﻿namespace OrderUtil {
-    public class Class1 {
+    public class RepositoryFactory {
 
     }
 }

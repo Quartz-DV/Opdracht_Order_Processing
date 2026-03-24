@@ -5,6 +5,6 @@ using System.Text;
 using System.Threading.Tasks;
 
 namespace OrderBL.Interfaces {
-    internal interface Interface1 {
+    public interface IDelivery {
     }
 }
