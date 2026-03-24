@@ -6,7 +6,13 @@ using System.Threading.Tasks;
 
 namespace OrderBL.StatusKlassen
 {
-    internal class BronsStatus
+    public class BronsStatus
     {
+        private int _bronsPrijs;
+        public int BronsPrijs
+        {
+            get { return _bronsPrijs; }
+            set { _bronsPrijs = 120 + 100; }
+        }
     }
 }

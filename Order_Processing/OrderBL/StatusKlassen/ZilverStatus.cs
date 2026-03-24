@@ -6,7 +6,13 @@ using System.Threading.Tasks;
 
 namespace OrderBL.StatusKlassen
 {
-    internal class ZilverStatus
+    public class ZilverStatus
     {
+        private int _zilverPrijs;
+        public int ZilverPrijs
+        {
+            get { return _zilverPrijs; }
+            set { _zilverPrijs = 120 * 2 ; }
+        }
     }
 }

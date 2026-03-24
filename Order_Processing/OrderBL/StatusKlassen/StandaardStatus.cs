@@ -6,7 +6,15 @@ using System.Threading.Tasks;
 
 namespace OrderBL.Subklassen
 {
-    internal class StandaardStatus
+    public class StandaardStatus
     {
+        private int _prijs;
+        public int Prijs
+                    {
+            get { return _prijs; }
+            set { _prijs = 120; }
+        }
+
+
     }
 }
