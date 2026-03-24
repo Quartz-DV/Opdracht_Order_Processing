@@ -6,7 +6,5 @@ using System.Threading.Tasks;
 
 namespace OrderBL.DeliveryKlassen
 {
-    internal class StandaardDelivery
-    {
-    }
+
 }

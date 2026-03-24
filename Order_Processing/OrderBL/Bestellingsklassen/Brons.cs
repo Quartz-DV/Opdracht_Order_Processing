@@ -1,18 +1,18 @@
-﻿using System;
+﻿using OrderBL.Subklassen;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using OrderBL.DeliveryKlassen;
 
-namespace OrderBL.StatusKlassen
+namespace OrderBL.Bestellingsklassen
 {
-    public class Brons
+    public class Brons : BasisPrijs
     {
-        private int _bronsPrijs;
-        public int BronsPrijs
+        public override decimal Kost
         {
-            get { return _bronsPrijs; }
-            set { _bronsPrijs = 120 + 100; }
+            get { return base.Kost + 100.0m; }
         }
     }
 }

@@ -4,17 +4,10 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace OrderBL.Subklassen
+namespace OrderBL.Bestellingsklassen
 {
-    public class Standaard
+    public class Standaard : BasisPrijs
     {
-        private int _prijs;
-        public int Prijs
-                    {
-            get { return _prijs; }
-            set { _prijs = 120; }
-        }
-
 
     }
 }

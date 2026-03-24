@@ -4,15 +4,13 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace OrderBL.StatusKlassen
+namespace OrderBL.Bestellingsklassen
 {
-    public class Zilver
+    public class Zilver : BasisPrijs
     {
-        private int _zilverPrijs;
-        public int ZilverPrijs
+        public override decimal Kost
         {
-            get { return _zilverPrijs; }
-            set { _zilverPrijs = 120 * 2 ; }
+            get { return base.Kost * 2; }
         }
     }
 }

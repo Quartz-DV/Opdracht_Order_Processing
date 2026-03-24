@@ -1,5 +1,4 @@
-﻿using OrderBL.DeliveryKlassen;
-using System;
+﻿using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -7,12 +6,12 @@ using System.Threading.Tasks;
 
 namespace OrderBL.Bestellingsklassen
 {
-    public class Gold : BasisPrijs
+    public class BasisPrijs
     {
-        public override decimal Kost
+        public virtual decimal Kost
         {
-            get { return base.Kost * 3; }
+            get { return 120.0m; } // standaardprijs
         }
-        
     }
 }
+
