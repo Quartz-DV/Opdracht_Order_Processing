@@ -8,6 +8,10 @@ namespace OrderBL.Domein
 {
     internal class Event
     {
-
+        public string Naam { get; set; }
+        public int Id { get; set; }
+        public string Adres { get; set; }
+        public DateTime datum { get; set; }
+        public int StandaardPrijs { get; set; }
     }
 }
