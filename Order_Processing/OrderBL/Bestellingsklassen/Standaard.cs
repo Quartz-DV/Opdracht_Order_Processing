@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace OrderBL.Subklassen
 {
-    public class StandaardStatus
+    public class Standaard
     {
         private int _prijs;
         public int Prijs
