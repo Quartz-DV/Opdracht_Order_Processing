@@ -7,58 +7,17 @@
         mc:Ignorable="d"
         Title="MainWindow" Height="450" Width="800">
     <Grid Margin="0" >
-        <StackPanel HorizontalAlignment="Center" VerticalAlignment="Center" Orientation="Horizontal">
+        <StackPanel HorizontalAlignment="Center" VerticalAlignment="Center">
+            
+            <StackPanel Orientation="Horizontal" Margin="0,0,0,5">
+                <TextBlock>Member (email)</TextBlock>
+                <TextBox Width="150" x:Name="txtBoxEmail"></TextBox>
 
-            <StackPanel HorizontalAlignment="Center" VerticalAlignment="Center">
-
-                <StackPanel Orientation="Horizontal">
-                    <TextBlock HorizontalAlignment="Center">Voornaam</TextBlock>
-                    <TextBox Width="125" Height="25" VerticalAlignment="Top" HorizontalAlignment="Left" ></TextBox>
-                    <StackPanel Margin="5,0,5,0"></StackPanel>
-                    <TextBlock HorizontalAlignment="Center">Familie naam</TextBlock>
-                    <TextBox Width="125" Height="25" VerticalAlignment="Top" HorizontalAlignment="Left" ></TextBox>
-                </StackPanel>
-                <StackPanel Margin="0,5,0,5"></StackPanel>
-                
-                <StackPanel Orientation="Horizontal" >
-                    <TextBlock HorizontalAlignment="Center">Email</TextBlock>
-                    <TextBox Width="345" Height="25" />
-                </StackPanel>
-                <StackPanel Margin="0,5,0,5"></StackPanel>
-
-                <StackPanel Orientation="Horizontal" HorizontalAlignment="Center">
-                    <TextBlock HorizontalAlignment="Center">PostCode</TextBlock>
-                    <TextBox Width="125" Height="25" VerticalAlignment="Top" />
-                    <StackPanel Margin="5,0,5,0"></StackPanel>
-                    <TextBlock HorizontalAlignment="Center">Straat</TextBlock>
-                    <TextBox Width="125" Height="25" VerticalAlignment="Top" />
-                </StackPanel>
-                <StackPanel Margin="0,5,0,5"></StackPanel>
-                <StackPanel Orientation="Horizontal" HorizontalAlignment="Center">
-                    <TextBlock HorizontalAlignment="Center">Huisnummer</TextBlock>
-                    <TextBox Width="125" Height="25" VerticalAlignment="Top" />
-                    <StackPanel Margin="5,0,5,0"></StackPanel>
-                    <TextBlock HorizontalAlignment="Center">Status</TextBlock>
-                    <ComboBox Width="115">
-                        <ComboBoxItem>Standaard</ComboBoxItem>
-                        <ComboBoxItem>Brons</ComboBoxItem>
-                        <ComboBoxItem>Goud</ComboBoxItem>
-                        <ComboBoxItem>Silver</ComboBoxItem>
-                    </ComboBox>
-                </StackPanel>
-                <StackPanel Margin="0,5,5,5"></StackPanel>
-                <Button HorizontalAlignment="Center" x:Name="btnLeden" Click="btnLogIn_Click">Registreer</Button>
+                <CheckBox Margin="5,0,0,0">Admin</CheckBox>
             </StackPanel>
-
-            <StackPanel Margin="5,0,5,0"></StackPanel>
-
-            <StackPanel HorizontalAlignment="Center" VerticalAlignment="Center">
-                <TextBlock HorizontalAlignment="Center" FontSize="20">EVENEMENTEN</TextBlock>
-                <StackPanel HorizontalAlignment="Center">
-                    <CheckBox>EVENT1</CheckBox>
-                    <CheckBox>EVENT2</CheckBox>
-                    <CheckBox>EVENT3</CheckBox>
-                </StackPanel>
+            
+            <StackPanel>
+                <Button x:Name="btnLogIn" Click="btnLogIn_Click">LOGIN</Button>
             </StackPanel>
         </StackPanel>
 
