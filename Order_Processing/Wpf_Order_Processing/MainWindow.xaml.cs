@@ -22,9 +22,6 @@ namespace Wpf_Order_Processing
             InitializeComponent();
         }
 
-          
-        
-
         private void btnLogIn_Click(object sender, RoutedEventArgs e)
         {
             InfoWindow infoWindow = new InfoWindow();
