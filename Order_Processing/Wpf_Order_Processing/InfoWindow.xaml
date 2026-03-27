@@ -10,7 +10,7 @@
         <StackPanel Margin="5"  Orientation="Horizontal">
             <StackPanel Orientation="Horizontal" >
                 <TextBlock Margin="0,0,3,0" >Naam:</TextBlock>
-                <TextBlock>John Doe</TextBlock>
+                <TextBlock x:Name="nameText">John Doe</TextBlock>
             </StackPanel>
             
             <StackPanel Orientation="Horizontal" Margin="5,0,0,0">
@@ -26,6 +26,9 @@
             <StackPanel Orientation="Horizontal" Margin="5,0,0,0">
                 <TextBlock Margin="0,0,3,0">Email:</TextBlock>
                 <TextBlock>GOLD</TextBlock>
+            </StackPanel>
+            <StackPanel>
+                <Button x:Name="btnPrint">PRINT</Button>
             </StackPanel>
         </StackPanel>
     </Grid>
