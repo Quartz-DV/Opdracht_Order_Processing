@@ -6,7 +6,17 @@
         xmlns:local="clr-namespace:Wpf_Order_Processing"
         mc:Ignorable="d"
         Title="MainWindow" Height="450" Width="800">
-    <Grid>
+    <Grid Margin="0" >
+        <StackPanel HorizontalAlignment="Center" VerticalAlignment="Center">
+            <TextBlock HorizontalAlignment="Center">Login</TextBlock>
+            <TextBox Width="250" Height="25" VerticalAlignment="Top" HorizontalAlignment="Left" ></TextBox>
 
+            <TextBlock Margin="0,25,0,0" HorizontalAlignment="Center">Password</TextBlock>
+            <TextBox Width="250" Height="25" HorizontalAlignment="Left" VerticalAlignment="Top" ></TextBox>
+
+
+            <Button HorizontalAlignment="Center" x:Name="btnLogIn" Click="btnLogIn_Click">LOG IN</Button>
+        </StackPanel>
+        
     </Grid>
 </Window>

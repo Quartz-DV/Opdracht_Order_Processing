@@ -1,4 +1,5 @@
-﻿using System.Text;
+﻿using System;
+using System.Text;
 using System.Windows;
 using System.Windows.Controls;
 using System.Windows.Data;
@@ -19,6 +20,14 @@ namespace Wpf_Order_Processing
         public MainWindow()
         {
             InitializeComponent();
+        }
+
+          
+        
+
+        private void btnLogIn_Click(object sender, RoutedEventArgs e)
+        {
+            MessageBox.Show("TEST");
         }
     }
 }
