@@ -21,7 +21,7 @@ namespace OrderDL {
 
             ledenLijst.Add(nieuwLid.Id, nieuwLid);
 
-            
+
         }
 
         public Lid HaalLidOp(int id) {
@@ -33,6 +33,11 @@ namespace OrderDL {
 
         public List<Lid> HaalAlleLedenOp() {
             return ledenLijst.Values.ToList();
+        }
+
+        public List<string> HaalEmailOp() {
+
+            return
         }
     }
 
