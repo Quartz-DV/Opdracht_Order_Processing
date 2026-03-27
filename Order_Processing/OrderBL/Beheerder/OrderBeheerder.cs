@@ -1,5 +1,4 @@
 ﻿using OrderBL.Domein;
-using OrderBL.Lidklassen;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -29,10 +28,15 @@ namespace OrderBL.Beheerder {
             return Eventrepo.HaalAlleEventenOp();
         }
 
-        public  RegistreerLid(Lid lid) {
+        public  void RegistreerLid(Lid lid) {
 
-            return Lidrepo.VoegLidToe(lid);
+             Lidrepo.VoegLidToe(lid);
 
+        }
+
+        public void VoegEventToe(Event nieuwEvent) {
+
+             Eventrepo.VoegEventToe(nieuwEvent);
         }
 
         public void PlaatsBestelling(int lidId, int eventId) {
@@ -41,7 +45,7 @@ namespace OrderBL.Beheerder {
             Event gekozenEvent = Eventrepo.HaalEventOp(eventId);
 
             if (koper == null || gekozenEvent == null) {
-                throw new Exception("Fout: Lid of Event is niet gevonden!");
+                throw new Exception("Lid of Event is niet gevonden");
             }
 
 

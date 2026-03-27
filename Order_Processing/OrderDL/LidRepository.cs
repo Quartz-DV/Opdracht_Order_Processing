@@ -20,6 +20,8 @@ namespace OrderDL {
             }
 
             ledenLijst.Add(nieuwLid.Id, nieuwLid);
+
+            
         }
 
         public Lid HaalLidOp(int id) {

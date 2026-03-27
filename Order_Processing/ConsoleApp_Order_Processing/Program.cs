@@ -1,7 +1,6 @@
 ﻿using OrderBL.Beheerder;
 using OrderBL.Domein;
 using OrderBL.Interfaces;
-using OrderBL.Lidklassen;
 using System.Security.Cryptography;
 using OrderUtil;
 
@@ -30,16 +29,16 @@ event1.Adres = "Expo Gent";
 
 Event event2 = new Event();
 event2.Naam = "VIP Zomerfestival";
-event2.KostPrijs = 150.0m; 
+event2.KostPrijs = 150.0m;
 event2.Datum = new DateTime(2026, 8, 20);
 event2.Adres = "Sportpaleis Antwerpen";
 
-//Beheerder.MaakEventAan(event1);
-//Beheerder.MaakEventAan(event2);
+Beheerder.VoegEventToe(event1);
+Beheerder.VoegEventToe(event2);
 
 
 Lid testLid = new Lid();
 testLid.Naam = "Sarah Peeters";
 testLid.Status = "Gold";
-Beheerder.(testLid);
+Beheerder.RegistreerLid(testLid);
 

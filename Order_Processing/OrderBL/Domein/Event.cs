@@ -12,6 +12,6 @@ namespace OrderBL.Domein
         public int Id { get; set; }
         public string Adres { get; set; }
         public DateTime Datum { get; set; }
-        public decimal KostPrijs { get; set; } = 120;
+        public decimal KostPrijs { get; set; }
     }
 }

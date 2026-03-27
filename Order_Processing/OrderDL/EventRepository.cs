@@ -3,6 +3,7 @@ using OrderBL.Interfaces;
 using System;
 using System.Collections.Generic;
 using System.Linq;
+using System.Reflection.Metadata.Ecma335;
 using System.Text;
 using System.Threading.Tasks;
 
@@ -23,7 +24,10 @@ namespace OrderDL {
             }
 
             eventLijst.Add(nieuwEvent.Id, nieuwEvent);
+
+            
         }
+        
 
         public Event HaalEventOp(int id) {
             if (eventLijst.ContainsKey(id)) {

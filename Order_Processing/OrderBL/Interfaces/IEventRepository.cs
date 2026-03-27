@@ -8,7 +8,7 @@ using System.Threading.Tasks;
 namespace OrderBL.Interfaces {
     public interface IEventRepository {
 
-        public void VoegEventToe(Event nieuwEvent);
+        public void  VoegEventToe(Event nieuwEvent);
 
         public Event HaalEventOp(int id);
 
