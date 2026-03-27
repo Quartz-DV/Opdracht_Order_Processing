@@ -5,32 +5,51 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using OrderBL.Interfaces;
 
 namespace OrderBL.Beheerder {
     public class OrderBeheerder {
 
 
-        private LidRepository LidRepository;
-        private LidServices LidServices;
+        private ILidRepository Lidrepo;
+        private IEventRepository Eventrepo;
+        private IBestellingRepository Bestellingrepo;
 
-        public OrderBeheerder(LidRepository lidRepository, LidServices lidServices) {
-            LidRepository = lidRepository;
-            LidServices = lidServices;
+
+        public OrderBeheerder(ILidRepository Lidrepo, IEventRepository Eventrepo, IBestellingRepository Bestellingrepo) {
+
+            this.Lidrepo = Lidrepo;
+            this.Eventrepo = Eventrepo;
+            this.Bestellingrepo = Bestellingrepo;
+
         }
 
-        public void LidTaken(Lid lid) {
+        public List<Event> GeefBeschikbareEvents() {
 
-            LidRepository.RegistreerLid(lid);
+            return Eventrepo.HaalAlleEventenOp();
+        }
 
+        public  RegistreerLid(Lid lid) {
+
+            return Lidrepo.VoegLidToe(lid);
+
+        }
+
+        public void PlaatsBestelling(int lidId, int eventId) {
             
+            Lid koper = Lidrepo.HaalLidOp(lidId);
+            Event gekozenEvent = Eventrepo.HaalEventOp(eventId);
+
+            if (koper == null || gekozenEvent == null) {
+                throw new Exception("Fout: Lid of Event is niet gevonden!");
+            }
+
+
+
 
 
 
 
         }
-
-
-
-
     }
 }

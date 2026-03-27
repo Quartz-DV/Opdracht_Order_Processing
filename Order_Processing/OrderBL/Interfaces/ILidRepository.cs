@@ -1,0 +1,15 @@
+﻿using OrderBL.Domein;
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+
+namespace OrderBL.Interfaces {
+    public interface ILidRepository {
+
+        void VoegLidToe(Lid nieuwLid);
+        Lid HaalLidOp(int id);
+        List<Lid> HaalAlleLedenOp();
+    }
+}

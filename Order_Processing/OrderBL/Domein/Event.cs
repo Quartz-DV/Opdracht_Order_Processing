@@ -6,12 +6,12 @@ using System.Threading.Tasks;
 
 namespace OrderBL.Domein
 {
-    internal class Event
+    public class Event
     {
         public string Naam { get; set; }
         public int Id { get; set; }
         public string Adres { get; set; }
-        public DateTime datum { get; set; }
-        public double KostPrijs { get; set; } = 120;
+        public DateTime Datum { get; set; }
+        public decimal KostPrijs { get; set; } = 120;
     }
 }

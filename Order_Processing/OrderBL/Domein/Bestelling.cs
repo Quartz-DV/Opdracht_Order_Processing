@@ -10,11 +10,16 @@ namespace OrderBL.Domein
     {
         public bool HasWelcomePacket { get; set; }
         public bool HasNamePlate {  get; set; }
+        public int Id { get; set; }
+        public decimal TotalePrijs { get; set; }
 
-        public Bestelling(bool hasWelcomePacket, bool hasNamePlate)
+
+        public Bestelling(int id, bool hasWelcomePacket, bool hasNamePlate)
         {
+            Id = id;
             HasWelcomePacket = hasWelcomePacket;
             HasNamePlate = hasNamePlate;
+           
         }
     }
 }
