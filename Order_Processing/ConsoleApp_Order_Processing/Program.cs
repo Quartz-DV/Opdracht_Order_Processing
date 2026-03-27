@@ -19,10 +19,11 @@ OrderBeheerder Beheerder = new OrderBeheerder(Lidrepo,Eventrepo,Bestellingrepo);
 
 
 
-Lid testLid = new Lid();
-testLid.Naam = "Sarah Peeters";
-testLid.Status = "Gold";
-Beheerder.RegistreerLid(testLid);
+Lid Lid1 = new Lid();
+Lid1.Naam = "Sarah Peeters";
+Lid1.Status = "Gold";
+Beheerder.RegistreerLid(Lid1);
+
 
 
 
