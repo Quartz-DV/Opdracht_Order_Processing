@@ -28,12 +28,13 @@ namespace Wpf_Order_Processing
         private void btnLogIn_Click(object sender, RoutedEventArgs e)
         {
             InfoWindow infoWindow = new InfoWindow();
-            
-            
+
+
             if (txtBoxEmail.Text != "")
-            {
+            { 
                 infoWindow.Show();
             }
+                
         }
     }
 }
