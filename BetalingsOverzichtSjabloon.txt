@@ -1,0 +1,32 @@
+------------Bestellingsoverzicht------------
+
+Naam:
+Familienaam:
+
+Email:
+
+Leveringsadres:
+
+--------------------------------------------
+Voor event:
+
+Naam:
+
+Adres:
+
+Kostprijs:
+
+--------------------------------------------
+
+Extra's:
+//Als brons of hoger
+- Naamplaatje
+//als zilver
+- Welkomspakket
+//Als gold
+- Uitnodiging Diner
+
+Wordt geleverd op:
+(Gegeven datum van het event (2 of 3 dagen minder of zo)
+
+--------------------------------------------
