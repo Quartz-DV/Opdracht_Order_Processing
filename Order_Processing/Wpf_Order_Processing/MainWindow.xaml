@@ -11,7 +11,7 @@
             
             <StackPanel Orientation="Horizontal" Margin="0,0,0,5">
                 <TextBlock>Member (email)</TextBlock>
-                <TextBox Width="150" x:Name="txtBoxEmail"></TextBox>
+                <TextBox Width="155" x:Name="txtBoxEmail"></TextBox>
 
                 <CheckBox Margin="5,0,0,0">Admin</CheckBox>
             </StackPanel>

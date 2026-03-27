@@ -27,7 +27,7 @@ namespace Wpf_Order_Processing
             InfoWindow infoWindow = new InfoWindow();
 
 
-            if (txtBoxEmail.Text != "")
+            if (txtBoxEmail.Text != "" )
             { 
                 infoWindow.Show();
             }
