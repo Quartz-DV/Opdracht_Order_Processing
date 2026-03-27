@@ -7,16 +7,44 @@
         mc:Ignorable="d"
         Title="MainWindow" Height="450" Width="800">
     <Grid Margin="0" >
-        <StackPanel HorizontalAlignment="Center" VerticalAlignment="Center">
-            <TextBlock HorizontalAlignment="Center">Login</TextBlock>
-            <TextBox Width="250" Height="25" VerticalAlignment="Top" HorizontalAlignment="Left" ></TextBox>
+        <TextBlock HorizontalAlignment="Center" FontSize="20">EVENT UI MANAGER</TextBlock>
+        <StackPanel HorizontalAlignment="Center" VerticalAlignment="Center" Orientation="Horizontal">
+            
+            <StackPanel HorizontalAlignment="Center" VerticalAlignment="Center">
+                <TextBlock HorizontalAlignment="Center" FontSize="20">LEDEN</TextBlock>
+                <TextBlock HorizontalAlignment="Center">Naam</TextBlock>
+                <TextBox Width="250" Height="25" VerticalAlignment="Top" HorizontalAlignment="Left" ></TextBox>
 
-            <TextBlock Margin="0,25,0,0" HorizontalAlignment="Center">Password</TextBlock>
-            <TextBox Width="250" Height="25" HorizontalAlignment="Left" VerticalAlignment="Top" ></TextBox>
+                <TextBlock Margin="0,25,0,0" HorizontalAlignment="Center">Email</TextBlock>
+                <TextBox Width="250" Height="25" HorizontalAlignment="Left" VerticalAlignment="Top" ></TextBox>
+
+                <TextBlock Margin="0,25,0,0" HorizontalAlignment="Center">Adres</TextBlock>
+                <TextBox Width="250" Height="25" HorizontalAlignment="Left" VerticalAlignment="Top" ></TextBox>
+
+                <TextBlock Margin="0,25,0,0" HorizontalAlignment="Center">Status</TextBlock>
+                <ComboBox>
+                    <ComboBoxItem>Standaard</ComboBoxItem>
+                    <ComboBoxItem>Brons</ComboBoxItem>
+                    <ComboBoxItem>Goud</ComboBoxItem>
+                    <ComboBoxItem>Silver</ComboBoxItem>
+                </ComboBox>
 
 
-            <Button HorizontalAlignment="Center" x:Name="btnLogIn" Click="btnLogIn_Click">LOG IN</Button>
+                <Button HorizontalAlignment="Center" x:Name="btnLeden" Click="btnLogIn_Click">Registreer</Button>
+            </StackPanel>
+            
+            <StackPanel Margin="5,0,5,0"></StackPanel>
+            
+            <StackPanel HorizontalAlignment="Center" VerticalAlignment="Center">
+                <TextBlock HorizontalAlignment="Center" FontSize="20">EVENEMENTEN</TextBlock>
+                <StackPanel>
+                    <CheckBox>EVENT1</CheckBox>
+                    <CheckBox>EVENT2</CheckBox>
+                    <CheckBox>EVENT3</CheckBox>
+                </StackPanel>
+            </StackPanel>
         </StackPanel>
         
+
     </Grid>
 </Window>
