@@ -8,10 +8,7 @@ namespace OrderBL.Bestellingsklassen
 {
     public class BasisPrijs
     {
-        public virtual decimal Kost
-        {
-            get { return 120.0m; } // standaardprijs
-        }
+        public virtual decimal Kost { get; set; }
     }
 }
 

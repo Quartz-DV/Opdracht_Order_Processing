@@ -7,7 +7,7 @@ using OrderUtil;
 // See https://aka.ms/new-console-template for more information
 Console.WriteLine("Hello, World!");
 
-string opslagType = "Collections";
+string opslagType = "COLLECTIONS";
 
 
 ILidRepository Lidrepo = RepositoryFactory.GeefLidRepository(opslagType);
@@ -15,6 +15,14 @@ IEventRepository Eventrepo = RepositoryFactory.GeefEventRepository(opslagType);
 IBestellingRepository Bestellingrepo = RepositoryFactory.GeefBestellingRepository(opslagType);
 
 OrderBeheerder Beheerder = new OrderBeheerder(Lidrepo,Eventrepo,Bestellingrepo);
+
+
+
+
+Lid testLid = new Lid();
+testLid.Naam = "Sarah Peeters";
+testLid.Status = "Gold";
+Beheerder.RegistreerLid(testLid);
 
 
 
@@ -37,8 +45,4 @@ Beheerder.VoegEventToe(event1);
 Beheerder.VoegEventToe(event2);
 
 
-Lid testLid = new Lid();
-testLid.Naam = "Sarah Peeters";
-testLid.Status = "Gold";
-Beheerder.RegistreerLid(testLid);
 
