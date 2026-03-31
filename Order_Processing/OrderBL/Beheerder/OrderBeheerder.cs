@@ -46,6 +46,11 @@ namespace OrderBL.Beheerder {
             return Lidrepo.HaalLidOp(email);
         }
 
+        public Event HaalEventOp(int id)
+        {
+            return Eventrepo.HaalEventOp(id);
+        }
+
         public void PlaatsBestelling(string lidId, int eventId) {
 
             Lid koper = Lidrepo.HaalLidOp(lidId);

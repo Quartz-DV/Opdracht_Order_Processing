@@ -45,7 +45,7 @@ namespace Wpf_Order_Processing
             MainWindow main = new MainWindow();
             
             Lid lid = Beheerder.HaalLidOp(txtBoxEmail);
-            Event eventN = Beheerder.HaalEventOp(1);
+            //Event eventN = Beheerder.HaalEventOp(id: );
 
 
 
@@ -70,7 +70,7 @@ namespace Wpf_Order_Processing
             LeveringsDatum.Text = Vandaag.AddDays(2).ToString();
 
 
-            bestelling = Beheerder.PlaatsBestelling(lid.Email,)
+            Beheerder.PlaatsBestelling(lid.Email, eventN.Id);
 
         }
 
