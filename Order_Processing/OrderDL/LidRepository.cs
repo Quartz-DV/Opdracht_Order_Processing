@@ -18,13 +18,10 @@ namespace OrderDL {
             Lid1.Naam = "Sarah Peeters";
             Lid1.Status = "Gold";
             Lid1.Email = "SarahPeeters@gmail.com";
+            Lid1.Adres = "Stationsplein 12, Lokeren 9160";
             ledenLijst.Add(Lid1.Email,Lid1);
 
-            Lid lid2 = new Lid();
-            lid2.Naam = "John Doe";
-            lid2.Status = "Brons";
-            lid2.Email = "JohnDoe@gmail.com";
-            ledenLijst.Add(lid2.Email, lid2);
+
 
             Event event1 = new Event();
             event1.Naam = "Tech Conferentie 2026";

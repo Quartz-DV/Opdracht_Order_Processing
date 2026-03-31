@@ -27,8 +27,8 @@ Lid1.Email = "Sarah Peeters";
 
 
 
-Beheerder.RegistreerLid(Lid1);
-Beheerder.RegistreerLid(lid2);
+//Beheerder.RegistreerLid(Lid1);
+//Beheerder.RegistreerLid(lid2);
 
 // List<string> alleleden = Beheerder.HaalAlleLedenOp();
 
