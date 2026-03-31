@@ -1,6 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Linq;
+using System.Security.Cryptography.X509Certificates;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows;
@@ -31,8 +32,13 @@ namespace Wpf_Order_Processing
                 
                 nameText.Text = txtBoxName;
             }
+
+            
         }
 
-       
+        private void VerzendButton_Click(object sender, RoutedEventArgs e)
+        {
+
+        }
     }
 }
