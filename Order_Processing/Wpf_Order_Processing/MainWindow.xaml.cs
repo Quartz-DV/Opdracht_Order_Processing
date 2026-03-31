@@ -44,8 +44,8 @@ namespace Wpf_Order_Processing {
             InfoWindow infoWindow = new InfoWindow(txtBoxEmail.Text);
 
             AdminWindow adminWindow = new AdminWindow();
-            
 
+            string admin = adminBox.IsChecked.ToString();
            
 
             try
@@ -59,7 +59,9 @@ namespace Wpf_Order_Processing {
                     
                     return;
                 }
+
                 else if (lid.Email == txtBoxEmail.Text && adminBox.IsChecked == true)
+
                 {
                     if (lid.Admin == true)
                     {

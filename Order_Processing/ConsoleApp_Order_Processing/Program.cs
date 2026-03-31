@@ -27,6 +27,36 @@ Lid1.Email = "Sarah Peeters";
 
 
 
+<<<<<<< HEAD
+=======
+
+Beheerder.RegistreerLid(Lid1);
+
+
+
+// List<string> alleleden = Beheerder.HaalAlleLedenOp();
+
+//string sarah = "SarahPeeters@gmail.com";
+
+//foreach (Lid lid in leden) {
+
+//    string email = lid.Email;
+
+//    if (email == sarah) {
+//        Console.WriteLine("Juist");
+//    }
+//    else {
+//        Console.WriteLine("Fout");
+//    }
+
+
+
+
+
+
+
+
+>>>>>>> f5e609aaf3b3686abe3c014822f8e8c44cfdb64b
     Event event1 = new Event();
     event1.Naam = "Tech Conferentie 2026";
     event1.KostPrijs = 75.0m;
