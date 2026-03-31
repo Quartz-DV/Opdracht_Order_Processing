@@ -7,6 +7,7 @@
         mc:Ignorable="d"
         Title="InfoWindow" Height="450" Width="800">
     <Grid>
+<<<<<<< HEAD
         <StackPanel Margin="5"  Orientation="Horizontal">
             <StackPanel Orientation="Horizontal" >
                 <TextBlock Margin="0,0,3,0" >Naam:</TextBlock>
@@ -15,21 +16,45 @@
             
             <StackPanel Orientation="Horizontal" Margin="5,0,0,0">
                 <TextBlock Margin="0,0,3,0">STATUS:</TextBlock>
-                <TextBlock>GOLD</TextBlock>
+                <TextBlock x:Name="status">GOLD</TextBlock>
             </StackPanel>
 
             <StackPanel Orientation="Horizontal" Margin="5,0,0,0">
                 <TextBlock Margin="0,0,3,0">Adres:</TextBlock>
-                <TextBlock>GOLD</TextBlock>
+                <TextBlock x:Name="adres">GOLD</TextBlock>
             </StackPanel>
 
             <StackPanel Orientation="Horizontal" Margin="5,0,0,0">
                 <TextBlock Margin="0,0,3,0">Email:</TextBlock>
-                <TextBlock>GOLD</TextBlock>
+                <TextBlock x:Name="email">GOLD</TextBlock>
             </StackPanel>
             <StackPanel>
                 <Button x:Name="btnPrint">PRINT</Button>
             </StackPanel>
         </StackPanel>
+=======
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="*"/>
+            <ColumnDefinition Width="150"/>
+        </Grid.ColumnDefinitions>
+
+        <Grid.RowDefinitions>
+            <RowDefinition Height="*"/>
+            <RowDefinition Height="100"/>
+        </Grid.RowDefinitions>
+
+<<<<<<< HEAD
+        <Button x:Name="VerzendButton" Content="Verzenden" HorizontalAlignment="Right" VerticalAlignment="Bottom" Margin="20" Grid.Column="3" Grid.Row="2" MinWidth="100" Click="VerzendButton_Click"/>
+
+
+>>>>>>> 7b6be438b19ffdefff2800c39f170f4e9fde09d8
+=======
+        <Button x:Name="VerzendButton" Content="Verzenden" HorizontalAlignment="Right" VerticalAlignment="Bottom" Margin="20" Grid.Column="2" Grid.Row="1" MinWidth="100" MinHeight="30" FontSize="20" Click="VerzendButton_Click"/>
+        <TextBlock x:Name="Titel" Text="Bestellingsoverzicht" Margin="10" VerticalAlignment="Top" HorizontalAlignment="Left" FontSize="20"/>
+        <TextBox x:Name="NaamOverzicht" Grid.Row="0" Grid.Column="0" Margin="20,50" VerticalAlignment="Top" HorizontalAlignment="Left" Width="300" />
+        <TextBox x:Name="AdresOverzicht" Grid.Row="0" Grid.Column="0" Margin="20,70" VerticalAlignment="Top" HorizontalAlignment="Left" Width="300"/>
+        <TextBox x:Name="EmailOverzicht" Grid.Row="0" Grid.Column="0" Margin="20,90" VerticalAlignment="Top" HorizontalAlignment="Left" Width="300"/>
+        <TextBlock x:Name="LeveringsDatum" Grid.Row="0" Grid.Column="0" Margin="20,110" VerticalAlignment="Top" HorizontalAlignment="Left" FontSize="16"/>
+>>>>>>> 170ede7fc7e27419ff2bcd0db2e91cf8b93def18
     </Grid>
 </Window>
