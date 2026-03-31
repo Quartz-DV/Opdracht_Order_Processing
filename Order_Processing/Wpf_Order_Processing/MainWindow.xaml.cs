@@ -40,13 +40,21 @@ namespace Wpf_Order_Processing {
         private void btnLogIn_Click(object sender, RoutedEventArgs e)
         {
 
+<<<<<<< HEAD
             InfoWindow infoWindow = new InfoWindow(txtBoxEmail.Text);    
             
+=======
+            InfoWindow infoWindow = new InfoWindow(txtBoxEmail.Text);
+           
+>>>>>>> 2cb6b7f82d0e4ecef732ab1451aa212c2af097c0
             try
             {
                 Lid lid = Beheerder.HaalLidOp(txtBoxEmail.Text);
 
+<<<<<<< HEAD
      
+=======
+>>>>>>> 2cb6b7f82d0e4ecef732ab1451aa212c2af097c0
 
                 if (lid == null)
                 {
