@@ -45,7 +45,7 @@ namespace Wpf_Order_Processing
 
 
 
-            DataGridBestellingen.ItemsSource = mijnBestellingen;
+            //DataGridBestellingen.ItemsSource = mijnBestellingen;
         }
 
 
