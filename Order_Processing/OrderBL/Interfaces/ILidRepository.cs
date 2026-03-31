@@ -9,7 +9,8 @@ namespace OrderBL.Interfaces {
     public interface ILidRepository {
 
         void VoegLidToe(Lid nieuwLid);
-        Lid HaalLidOp(int id);
+        Lid HaalLidOp(string email);
         List<Lid> HaalAlleLedenOp();
+        
     }
 }
