@@ -33,6 +33,9 @@ namespace Wpf_Order_Processing
 
         OrderBeheerder Beheerder;
 
+        Bestelling bestelling = new Bestelling();
+        
+
         public InfoWindow(string txtBoxEmail)
         {
             InitializeComponent();
@@ -42,8 +45,9 @@ namespace Wpf_Order_Processing
             MainWindow main = new MainWindow();
             
             Lid lid = Beheerder.HaalLidOp(txtBoxEmail);
+            Event eventN = Beheerder.HaalEventOp(1);
 
-            
+
 
             if (this.IsActive == false)
             {
@@ -65,10 +69,15 @@ namespace Wpf_Order_Processing
 
             LeveringsDatum.Text = Vandaag.AddDays(2).ToString();
 
+
+            bestelling = Beheerder.PlaatsBestelling(lid.Email,)
+
         }
 
         private void VerzendButton_Click(object sender, RoutedEventArgs e)
         {
+
+            
             MessageBox.Show("Bestelling is verzonden.");
         }
 

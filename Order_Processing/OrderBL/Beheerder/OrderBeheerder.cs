@@ -108,37 +108,35 @@ namespace OrderBL.Beheerder {
 
         }
 
-
-            //        if (koper == null || gekozenEvent == null) {
-            //            throw new Exception("Lid of Event is niet gevonden");
-            //        }
-
-            //        switch (koper.Status)
-            //{
-            //            case "Gold":
-
-            //                nieuweBestelling.HasWelcomePacket = true;
-            //                nieuweBestelling.HasNamePlate = true;
-            //                decimal kost = standaardPrijs.Kost;
+        public Event HaalEventOp(int id)
+        {
+            return Eventrepo.HaalEventOp(id);
+        }
 
 
-            //                return new Bestelling();
+        //        if (koper == null || gekozenEvent == null) {
+        //            throw new Exception("Lid of Event is niet gevonden");
+        //        }
 
-            //            default: return null;
+        //        switch (koper.Status)
+        //{
+        //            case "Gold":
 
-
-            //            case "Zilver":
-
-            //                nieuweBestelling.HasWelcomePacket = true;
-            //                nieuweBestelling.HasNamePlate = true;
-            //                decimal kost = standaardPrijs.Kost;
-
-
-
+        //                nieuweBestelling.HasWelcomePacket = true;
+        //                nieuweBestelling.HasNamePlate = true;
+        //                decimal kost = standaardPrijs.Kost;
 
 
+        //                return new Bestelling();
+
+        //            default: return null;
 
 
+        //            case "Zilver":
+
+        //                nieuweBestelling.HasWelcomePacket = true;
+        //                nieuweBestelling.HasNamePlate = true;
+        //                decimal kost = standaardPrijs.Kost;
 
 
 
@@ -146,6 +144,13 @@ namespace OrderBL.Beheerder {
 
 
 
-        
+
+
+
+
+
+
+
+
     }
 }
