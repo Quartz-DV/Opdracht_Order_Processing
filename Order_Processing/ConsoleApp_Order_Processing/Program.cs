@@ -23,7 +23,12 @@ Lid Lid1 = new Lid();
 Lid1.Naam = "Sarah Peeters";
 Lid1.Status = "Gold";
 Lid1.Email = "Sarah Peeters";
+
+
+
+
 Beheerder.RegistreerLid(Lid1);
+Beheerder.RegistreerLid(lid2);
 
 // List<string> alleleden = Beheerder.HaalAlleLedenOp();
 

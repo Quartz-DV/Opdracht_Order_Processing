@@ -15,17 +15,17 @@
             
             <StackPanel Orientation="Horizontal" Margin="5,0,0,0">
                 <TextBlock Margin="0,0,3,0">STATUS:</TextBlock>
-                <TextBlock>GOLD</TextBlock>
+                <TextBlock x:Name="status">GOLD</TextBlock>
             </StackPanel>
 
             <StackPanel Orientation="Horizontal" Margin="5,0,0,0">
                 <TextBlock Margin="0,0,3,0">Adres:</TextBlock>
-                <TextBlock>GOLD</TextBlock>
+                <TextBlock x:Name="adres">GOLD</TextBlock>
             </StackPanel>
 
             <StackPanel Orientation="Horizontal" Margin="5,0,0,0">
                 <TextBlock Margin="0,0,3,0">Email:</TextBlock>
-                <TextBlock>GOLD</TextBlock>
+                <TextBlock x:Name="email">GOLD</TextBlock>
             </StackPanel>
             <StackPanel>
                 <Button x:Name="btnPrint">PRINT</Button>

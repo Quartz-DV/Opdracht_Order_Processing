@@ -1,4 +1,8 @@
-﻿using System;
+﻿using OrderBL.Beheerder;
+using OrderBL.Domein;
+using OrderBL.Interfaces;
+using OrderUtil;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -19,20 +23,34 @@ namespace Wpf_Order_Processing
     /// </summary>
     public partial class InfoWindow : Window
     {
-        public InfoWindow(string txtBoxName)
+        private static string opslagType = "COLLECTIONS";
+
+        ILidRepository Lidrepo = RepositoryFactory.GeefLidRepository(opslagType);
+        IEventRepository Eventrepo = RepositoryFactory.GeefEventRepository(opslagType);
+        IBestellingRepository Bestellingrepo = RepositoryFactory.GeefBestellingRepository(opslagType);
+
+        OrderBeheerder Beheerder;
+
+        public InfoWindow(string txtBoxEmail)
         {
             InitializeComponent();
 
+            Beheerder = new OrderBeheerder(Lidrepo, Eventrepo, Bestellingrepo);
+
             MainWindow main = new MainWindow();
+            
+            Lid lid = Beheerder.HaalLidOp(txtBoxEmail);
 
             if (this.IsActive == false)
             {
-                
-                
-                nameText.Text = txtBoxName;
+                nameText.Text = lid.Naam;
+                status.Text = lid.Status;
+                adres.Text = lid.Adres;
+                email.Text = lid.Email;
             }
         }
 
-       
+
+
     }
 }

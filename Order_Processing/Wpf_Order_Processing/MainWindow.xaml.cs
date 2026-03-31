@@ -29,43 +29,39 @@ namespace Wpf_Order_Processing {
 
         OrderBeheerder Beheerder;
 
-        public MainWindow() {
-
+        public MainWindow() 
+        {
             InitializeComponent();
 
             Beheerder = new OrderBeheerder(Lidrepo, Eventrepo, Bestellingrepo);
-
-
-
-
-
-           
         }
 
 
         private void btnLogIn_Click(object sender, RoutedEventArgs e)
         {
-            InfoWindow infoWindow = new InfoWindow(txtBoxEmail.Text);
-           
-
-            
+            try
+            {
                 Lid lid = Beheerder.HaalLidOp(txtBoxEmail.Text);
 
-            MessageBox.Show("Ongeldige Email");
-
-
-
-
-
                 
-            
 
+                if (lid == null)
+                {
+                    MessageBox.Show("Ongeldige email");
+                    return;
+                }
+                else if (lid.Email == txtBoxEmail.Text)
+                {
+                    InfoWindow infoWindow = new InfoWindow(lid.Email);
+                    infoWindow.Show();
+                }
+                
+            }
+            catch (Exception ex)
+            {
 
-
-
-
-
-
-        }
+                throw new ArgumentNullException($"Failed to get Lid with as reason: {ex}");
+            }   
         }
     }
+}
