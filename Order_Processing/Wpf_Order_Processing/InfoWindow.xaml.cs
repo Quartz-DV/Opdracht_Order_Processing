@@ -45,8 +45,8 @@ namespace Wpf_Order_Processing
             MainWindow main = new MainWindow();
             
             Lid lid = Beheerder.HaalLidOp(txtBoxEmail);
-            Event eventN = new Event();
-            eventN = Beheerder.HaalEventOp(1);
+            List<Event> eventN = Beheerder.GeefBeschikbareEvents();
+            Event eventB = Beheerder.HaalEventOp()
 
 
 
