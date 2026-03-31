@@ -9,6 +9,10 @@
   </PropertyGroup>
 
   <ItemGroup>
+    <Compile Include="C:\Users\basca\Desktop\Temp.cs" Link="Temp.cs" />
+  </ItemGroup>
+
+  <ItemGroup>
     <ProjectReference Include="..\OrderBL\OrderBL.csproj" />
     <ProjectReference Include="..\OrderUtil\OrderUtil.csproj" />
   </ItemGroup>
