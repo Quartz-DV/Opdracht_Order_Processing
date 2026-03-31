@@ -59,9 +59,17 @@ namespace Wpf_Order_Processing {
                     
                     return;
                 }
-                else if (lid.Email == txtBoxEmail.Text && (bool)adminBox.IsChecked && lid.Admin == true)
+                else if (lid.Email == txtBoxEmail.Text && adminBox.IsChecked == true)
                 {
-                    adminWindow.Show();
+                    if (lid.Admin == true)
+                    {
+                        adminWindow.Show();
+                    }
+                    else
+                    {
+                        MessageBox.Show("ACCESS DENIED");
+                    }
+                    
                 }
                 else {
 
