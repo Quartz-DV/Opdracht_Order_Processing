@@ -53,7 +53,8 @@ namespace Wpf_Order_Processing
             NaamOverzicht.Text = $"placeholder";
             AdresOverzicht.Text = $"placeholder";
             EmailOverzicht.Text = $"placeholder";
-
+            StatusOverzicht.Text = $"placeholder";
+            LeveringsDatum.Text = $"placeholder";
 
         }
 
