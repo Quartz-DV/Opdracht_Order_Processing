@@ -19,9 +19,20 @@ namespace Wpf_Order_Processing
     /// </summary>
     public partial class InfoWindow : Window
     {
-        public InfoWindow()
+        public InfoWindow(string txtBoxName)
         {
             InitializeComponent();
+
+            MainWindow main = new MainWindow();
+
+            if (this.IsActive == false)
+            {
+                
+                
+                nameText.Text = txtBoxName;
+            }
         }
+
+       
     }
 }

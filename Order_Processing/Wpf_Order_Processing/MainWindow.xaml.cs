@@ -42,9 +42,21 @@ namespace Wpf_Order_Processing {
            
         }
 
+<<<<<<< HEAD
         private void btnLogIn_Click(object sender, RoutedEventArgs e) {
             InfoWindow infoWindow = new InfoWindow();
 
+=======
+        private void btnLogIn_Click(object sender, RoutedEventArgs e)
+        {
+            InfoWindow infoWindow = new InfoWindow(txtBoxEmail.Text);
+
+<<<<<<< HEAD
+            
+=======
+            Beheerder.
+>>>>>>> 8719e699951c106bea545e2f52b52aae7ce96d8a
+>>>>>>> 1e5c9fb65f39a3ab86994065cd19fa9b46243332
 
             
                 Lid lid = Beheerder.HaalLidOp(txtBoxEmail.Text);
