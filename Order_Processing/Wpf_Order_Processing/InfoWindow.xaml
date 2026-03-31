@@ -23,7 +23,10 @@
         <TextBox x:Name="AdresOverzicht" Grid.Row="0" Grid.Column="0" Margin="20,70" VerticalAlignment="Top" HorizontalAlignment="Left" Width="300"/>
         <TextBox x:Name="EmailOverzicht" Grid.Row="0" Grid.Column="0" Margin="20,90" VerticalAlignment="Top" HorizontalAlignment="Left" Width="300"/>
         <TextBox x:Name="StatusOverzicht" Grid.Row="0" Grid.Column="0" Margin="20,110" VerticalAlignment="Top" HorizontalAlignment="Left" Width="300"/>
-        <TextBlock x:Name="LeveringsDatum" Grid.Row="0" Grid.Column="0" Margin="20,130" VerticalAlignment="Top" HorizontalAlignment="Left" FontSize="16"/>
+        <TextBlock x:Name="GeleverdOp" Grid.Row="0" Grid.Column="0" Margin="20,130" VerticalAlignment="Top" HorizontalAlignment="Left" FontSize="16"/>
+        <TextBlock x:Name="LeveringsDatum" Grid.Row="0" Grid.Column="0" Margin="164,130" VerticalAlignment="Top" HorizontalAlignment="Left" FontSize="16"/>
+        
+        <TextBlock x:Name="ItemsTitel" Text="Items die worden bezorgd:" Grid.Row="0" Grid.Column="0" Margin="1"
 
     </Grid>
 </Window>

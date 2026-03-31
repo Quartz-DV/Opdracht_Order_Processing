@@ -47,11 +47,15 @@ namespace Wpf_Order_Processing
 
             }
 
-            NaamOverzicht.Text = $"placeholder";
-            AdresOverzicht.Text = $"placeholder";
-            EmailOverzicht.Text = $"placeholder";
-            StatusOverzicht.Text = $"placeholder";
-            LeveringsDatum.Text = $"placeholder";
+            DateTime Vandaag = DateTime.Now.Date;
+
+
+            NaamOverzicht.Text = lid.Naam;
+            AdresOverzicht.Text = lid.Adres;
+            EmailOverzicht.Text = lid.Email;
+            StatusOverzicht.Text = lid.Status;
+            GeleverdOp.Text = "Wordt geleverd op ";
+            LeveringsDatum.Text = Vandaag.AddDays(2).ToString();
 
         }
 
