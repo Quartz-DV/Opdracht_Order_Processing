@@ -7,6 +7,7 @@
         mc:Ignorable="d"
         Title="InfoWindow" Height="450" Width="800">
     <Grid>
+<<<<<<< HEAD
         <StackPanel Margin="5"  Orientation="Horizontal">
             <StackPanel Orientation="Horizontal" >
                 <TextBlock Margin="0,0,3,0" >Naam:</TextBlock>
@@ -31,5 +32,23 @@
                 <Button x:Name="btnPrint">PRINT</Button>
             </StackPanel>
         </StackPanel>
+=======
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="300"/>
+            <ColumnDefinition Width="100"/>
+            <ColumnDefinition Width="*"/>
+            <ColumnDefinition Width="150"/>
+        </Grid.ColumnDefinitions>
+
+        <Grid.RowDefinitions>
+            <RowDefinition Height="100"/>
+            <RowDefinition Height="*"/>
+            <RowDefinition Height="100"/>
+        </Grid.RowDefinitions>
+
+        <Button x:Name="VerzendButton" Content="Verzenden" HorizontalAlignment="Right" VerticalAlignment="Bottom" Margin="20" Grid.Column="3" Grid.Row="2" MinWidth="100" Click="VerzendButton_Click"/>
+
+
+>>>>>>> 7b6be438b19ffdefff2800c39f170f4e9fde09d8
     </Grid>
 </Window>

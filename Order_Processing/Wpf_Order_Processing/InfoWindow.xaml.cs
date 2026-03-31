@@ -5,6 +5,7 @@ using OrderUtil;
 using System;
 using System.Collections.Generic;
 using System.Linq;
+using System.Security.Cryptography.X509Certificates;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows;
@@ -48,9 +49,18 @@ namespace Wpf_Order_Processing
                 adres.Text = lid.Adres;
                 email.Text = lid.Email;
             }
+
+            
         }
 
+<<<<<<< HEAD
 
 
+=======
+        private void VerzendButton_Click(object sender, RoutedEventArgs e)
+        {
+
+        }
+>>>>>>> 7b6be438b19ffdefff2800c39f170f4e9fde09d8
     }
 }
