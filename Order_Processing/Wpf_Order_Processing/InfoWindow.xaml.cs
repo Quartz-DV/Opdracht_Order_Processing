@@ -4,6 +4,7 @@ using OrderBL.Interfaces;
 using OrderUtil;
 using System;
 using System.Collections.Generic;
+using System.Data;
 using System.Linq;
 using System.Security.Cryptography.X509Certificates;
 using System.Text;
@@ -42,16 +43,29 @@ namespace Wpf_Order_Processing
             
             Lid lid = Beheerder.HaalLidOp(txtBoxEmail);
 
+            
+
             if (this.IsActive == false)
             {
 
             }
 
-            NaamOverzicht.Text = $"placeholder";
-            AdresOverzicht.Text = $"placeholder";
-            EmailOverzicht.Text = $"placeholder";
-            StatusOverzicht.Text = $"placeholder";
-            LeveringsDatum.Text = $"placeholder";
+<<<<<<< HEAD
+            DateTime Vandaag = DateTime.Now;
+=======
+            DateTime Vandaag = DateTime.Now.Date;
+
+>>>>>>> 2cb6b7f82d0e4ecef732ab1451aa212c2af097c0
+
+            NaamOverzicht.Text = lid.Naam;
+            AdresOverzicht.Text = lid.Adres;
+            EmailOverzicht.Text = lid.Email;
+            StatusOverzicht.Text = lid.Status;
+<<<<<<< HEAD
+=======
+            GeleverdOp.Text = "Wordt geleverd op ";
+>>>>>>> 2cb6b7f82d0e4ecef732ab1451aa212c2af097c0
+            LeveringsDatum.Text = Vandaag.AddDays(2).ToString();
 
         }
 

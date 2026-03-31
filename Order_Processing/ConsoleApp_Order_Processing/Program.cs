@@ -27,8 +27,13 @@ Lid1.Email = "Sarah Peeters";
 
 
 
+<<<<<<< HEAD
 Beheerder.RegistreerLid(Lid1);
 
+=======
+//Beheerder.RegistreerLid(Lid1);
+//Beheerder.RegistreerLid(lid2);
+>>>>>>> 262a49ab029dfb5686defda178b4e39ccf404429
 
 // List<string> alleleden = Beheerder.HaalAlleLedenOp();
 

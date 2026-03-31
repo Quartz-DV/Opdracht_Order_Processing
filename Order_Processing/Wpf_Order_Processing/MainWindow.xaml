@@ -13,7 +13,7 @@
                 <TextBlock>Member (email)</TextBlock>
                 <TextBox Width="155" x:Name="txtBoxEmail"></TextBox>
 
-                <CheckBox Margin="5,0,0,0">Admin</CheckBox>
+                <CheckBox x:Name="adminBox"  Margin="5,0,0,0">Admin</CheckBox>
             </StackPanel>
             
             <StackPanel>
