@@ -33,12 +33,16 @@ namespace Wpf_Order_Processing
                 nameText.Text = txtBoxName;
             }
 
-            
+            NaamOverzicht.Text = $"placeholder";
+            AdresOverzicht.Text = $"placeholder";
+            EmailOverzicht.Text = $"placeholder";
+
+
         }
 
         private void VerzendButton_Click(object sender, RoutedEventArgs e)
         {
-
+            MessageBox.Show("Bestelling is verzonden.");
         }
     }
 }
