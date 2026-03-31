@@ -50,7 +50,11 @@ namespace Wpf_Order_Processing
                 email.Text = lid.Email;
             }
 
-            
+            NaamOverzicht.Text = $"placeholder";
+            AdresOverzicht.Text = $"placeholder";
+            EmailOverzicht.Text = $"placeholder";
+
+
         }
 
 <<<<<<< HEAD
@@ -59,7 +63,7 @@ namespace Wpf_Order_Processing
 =======
         private void VerzendButton_Click(object sender, RoutedEventArgs e)
         {
-
+            MessageBox.Show("Bestelling is verzonden.");
         }
 >>>>>>> 7b6be438b19ffdefff2800c39f170f4e9fde09d8
     }
