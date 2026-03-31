@@ -13,6 +13,7 @@ namespace OrderBL.Domein
             public string Email { get; set; }
             public string Adres  { get; set; }
         public string Status { get; set; }
+        public bool Admin { get; set; }
 
     }
 }

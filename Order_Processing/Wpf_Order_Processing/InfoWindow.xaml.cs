@@ -50,21 +50,19 @@ namespace Wpf_Order_Processing
 
             }
 
-<<<<<<< HEAD
-            DateTime Vandaag = DateTime.Now;
-=======
+            
+
             DateTime Vandaag = DateTime.Now.Date;
 
->>>>>>> 2cb6b7f82d0e4ecef732ab1451aa212c2af097c0
+
 
             NaamOverzicht.Text = lid.Naam;
             AdresOverzicht.Text = lid.Adres;
             EmailOverzicht.Text = lid.Email;
             StatusOverzicht.Text = lid.Status;
-<<<<<<< HEAD
-=======
+
             GeleverdOp.Text = "Wordt geleverd op ";
->>>>>>> 2cb6b7f82d0e4ecef732ab1451aa212c2af097c0
+
             LeveringsDatum.Text = Vandaag.AddDays(2).ToString();
 
         }
