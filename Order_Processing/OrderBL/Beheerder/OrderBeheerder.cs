@@ -36,6 +36,8 @@ namespace OrderBL.Beheerder {
 
         }
 
+       
+
         public void VoegEventToe(Event nieuwEvent) {
 
              Eventrepo.VoegEventToe(nieuwEvent);
@@ -44,6 +46,16 @@ namespace OrderBL.Beheerder {
         public Lid HaalLidOp(string email) {
 
             return Lidrepo.HaalLidOp(email);
+        }
+
+        public List<Bestelling> HaalAlleBestellingenOp() {
+
+            return Bestellingrepo.HaalAlleBestellingenOp();
+        }
+
+        public Bestelling HaalBestellingOp(int id) {
+
+            return Bestellingrepo.HaalOpBestelling(id);
         }
 
         public void PlaatsBestelling(string lidId, int eventId) {

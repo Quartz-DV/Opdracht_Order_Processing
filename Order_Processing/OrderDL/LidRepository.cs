@@ -40,12 +40,14 @@ namespace OrderDL {
             event1.KostPrijs = 75.0m;
             event1.Datum = new DateTime(2026, 6, 15);
             event1.Adres = "Expo Gent";
+            event1.Id = 1;
 
             Event event2 = new Event();
             event2.Naam = "VIP Zomerfestival";
             event2.KostPrijs = 150.0m;
             event2.Datum = new DateTime(2026, 8, 20);
             event2.Adres = "Sportpaleis Antwerpen";
+            event2.Id = 2;
 
             events.Add(event1);
             events.Add(event2);
