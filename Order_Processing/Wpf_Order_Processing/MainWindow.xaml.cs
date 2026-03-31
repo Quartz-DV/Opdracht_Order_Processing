@@ -47,9 +47,17 @@ namespace Wpf_Order_Processing {
         {
             InfoWindow infoWindow = new InfoWindow(txtBoxEmail.Text);
            
+            try {
 
-            
                 Lid lid = Beheerder.HaalLidOp(txtBoxEmail.Text);
+
+                if (lid.Email == txtBoxEmail.Text) {
+
+                    infoWindow.Show();
+                }
+            }
+            catch (NullReferenceException ex) { throw (ex); }
+
 
             MessageBox.Show("Ongeldige Email");
 
@@ -57,8 +65,11 @@ namespace Wpf_Order_Processing {
 
 
 
-                
-            
+
+
+
+
+
 
 
 
