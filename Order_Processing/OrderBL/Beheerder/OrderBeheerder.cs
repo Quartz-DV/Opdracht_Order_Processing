@@ -48,20 +48,22 @@ namespace OrderBL.Beheerder {
             return Lidrepo.HaalLidOp(email);
         }
 
-<<<<<<< HEAD
+
         public List<Bestelling> HaalAlleBestellingenOp() {
 
             return Bestellingrepo.HaalAlleBestellingenOp();
         }
 
-        public Bestelling HaalBestellingOp(int id) {
+        public Bestelling HaalBestellingOp(int id)
+        {
 
             return Bestellingrepo.HaalOpBestelling(id);
-=======
+        }
+
         public Event HaalEventOp(int id)
         {
             return Eventrepo.HaalEventOp(id);
->>>>>>> cf17dad374cabea4ae420349ac061fc611ae7f41
+
         }
 
         public void PlaatsBestelling(string lidId, int eventId) {
@@ -126,7 +128,9 @@ namespace OrderBL.Beheerder {
 
         }
 
-       
+        
+
+
 
 
         //        if (koper == null || gekozenEvent == null) {
