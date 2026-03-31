@@ -113,10 +113,7 @@ namespace OrderBL.Beheerder {
 
         }
 
-        public Event HaalEventOp(int id)
-        {
-            return Eventrepo.HaalEventOp(id);
-        }
+       
 
 
         //        if (koper == null || gekozenEvent == null) {
