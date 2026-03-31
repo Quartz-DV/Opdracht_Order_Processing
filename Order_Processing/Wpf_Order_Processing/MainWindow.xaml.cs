@@ -39,11 +39,39 @@ namespace Wpf_Order_Processing {
 
         private void btnLogIn_Click(object sender, RoutedEventArgs e)
         {
+<<<<<<< HEAD
+            InfoWindow infoWindow = new InfoWindow(txtBoxEmail.Text);
+           
+            try {
+
+                Lid lid = Beheerder.HaalLidOp(txtBoxEmail.Text);
+
+                if (lid.Email == txtBoxEmail.Text) {
+
+                    infoWindow.Show();
+                }
+            }
+            catch (NullReferenceException ex) { throw (ex); }
+
+
+            MessageBox.Show("Ongeldige Email");
+
+
+
+
+
+
+
+
+
+
+=======
             try
             {
                 Lid lid = Beheerder.HaalLidOp(txtBoxEmail.Text);
 
                 
+>>>>>>> daaac192cd7e7b90d65fd2f57cdcdab42389e643
 
                 if (lid == null)
                 {
