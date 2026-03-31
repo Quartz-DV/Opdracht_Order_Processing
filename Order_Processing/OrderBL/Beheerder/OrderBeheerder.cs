@@ -54,7 +54,8 @@ namespace OrderBL.Beheerder {
             return Bestellingrepo.HaalAlleBestellingenOp();
         }
 
-        public Bestelling HaalBestellingOp(int id) {
+        public Bestelling HaalBestellingOp(int id)
+        {
 
             return Bestellingrepo.HaalOpBestelling(id);
         }
@@ -127,7 +128,9 @@ namespace OrderBL.Beheerder {
 
         }
 
-       
+        
+
+
 
 
         //        if (koper == null || gekozenEvent == null) {
