@@ -44,10 +44,7 @@ namespace Wpf_Order_Processing
 
             if (this.IsActive == false)
             {
-                nameText.Text = lid.Naam;
-                status.Text = lid.Status;
-                adres.Text = lid.Adres;
-                email.Text = lid.Email;
+
             }
 
             NaamOverzicht.Text = $"placeholder";
@@ -58,14 +55,10 @@ namespace Wpf_Order_Processing
 
         }
 
-<<<<<<< HEAD
-
-
-=======
         private void VerzendButton_Click(object sender, RoutedEventArgs e)
         {
             MessageBox.Show("Bestelling is verzonden.");
         }
->>>>>>> 7b6be438b19ffdefff2800c39f170f4e9fde09d8
+
     }
 }
