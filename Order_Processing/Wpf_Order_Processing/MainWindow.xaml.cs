@@ -41,9 +41,8 @@ namespace Wpf_Order_Processing {
         {
 
 
-            InfoWindow infoWindow = new InfoWindow(txtBoxEmail.Text);
 
-            AdminWindow adminWindow = new AdminWindow();
+            AdminWindow adminWindow = new AdminWindow(Beheerder);
 
             string admin = adminBox.IsChecked.ToString();
            
@@ -59,9 +58,7 @@ namespace Wpf_Order_Processing {
                     
                     return;
                 }
-
                 else if (lid.Email == txtBoxEmail.Text && adminBox.IsChecked == true)
-
                 {
                     if (lid.Admin == true)
                     {
@@ -75,7 +72,9 @@ namespace Wpf_Order_Processing {
                 }
                 else {
 
-                    infoWindow.Show();
+                    string ingevuldeEmail = txtBoxEmail.Text;
+                    InfoWindow infoScherm = new InfoWindow(Beheerder, ingevuldeEmail);
+                    infoScherm.Show();
                 }
                 
             }

@@ -1,86 +1,51 @@
 ﻿using OrderBL.Beheerder;
 using OrderBL.Domein;
-using OrderBL.Interfaces;
-using OrderUtil;
 using System;
 using System.Collections.Generic;
-using System.Data;
-using System.Linq;
-using System.Security.Cryptography.X509Certificates;
-using System.Text;
-using System.Threading.Tasks;
 using System.Windows;
-using System.Windows.Controls;
-using System.Windows.Data;
-using System.Windows.Documents;
-using System.Windows.Input;
-using System.Windows.Media;
-using System.Windows.Media.Imaging;
-using System.Windows.Shapes;
 
-namespace Wpf_Order_Processing
-{
-    /// <summary>
-    /// Interaction logic for InfoWindow.xaml
-    /// </summary>
-    public partial class InfoWindow : Window
-    {
-        private static string opslagType = "COLLECTIONS";
 
-        ILidRepository Lidrepo = RepositoryFactory.GeefLidRepository(opslagType);
-        IEventRepository Eventrepo = RepositoryFactory.GeefEventRepository(opslagType);
-        IBestellingRepository Bestellingrepo = RepositoryFactory.GeefBestellingRepository(opslagType);
+namespace Wpf_Order_Processing {
+    public partial class InfoWindow : Window {
+     
+        private OrderBeheerder _beheerder;
+        private Lid _ingelogdLid;
 
-        OrderBeheerder Beheerder;
-
-        Bestelling bestelling = new Bestelling();
-        
-
-        public InfoWindow(string txtBoxEmail)
-        {
+        public InfoWindow(OrderBeheerder doorgegevenBeheerder, string txtBoxEmail) {
             InitializeComponent();
 
-            Beheerder = new OrderBeheerder(Lidrepo, Eventrepo, Bestellingrepo);
+           
+            _beheerder = doorgegevenBeheerder;
+            _ingelogdLid = _beheerder.HaalLidOp(txtBoxEmail);
 
-            MainWindow main = new MainWindow();
+            lstEvents.ItemsSource = _beheerder.GeefBeschikbareEvents();
+
+
+            //int aantalEvents = _beheerder.GeefBeschikbareEvents().Count;
+            //MessageBox.Show($"TEST: De database heeft {aantalEvents} events gevonden.");
+
+
+            NaamOverzicht.Text = _ingelogdLid.Naam;
+                AdresOverzicht.Text = _ingelogdLid.Adres;
+                EmailOverzicht.Text = _ingelogdLid.Email;
+                StatusOverzicht.Text = _ingelogdLid.Status;
+
+                GeleverdOp.Text = "Wordt geleverd op ";
+                LeveringsDatum.Text = DateTime.Now.Date.AddDays(2).ToString("dd/MM/yyyy");
             
-            Lid lid = Beheerder.HaalLidOp(txtBoxEmail);
-            List<Event> eventN = Beheerder.GeefBeschikbareEvents();
-            Event eventB = Beheerder.HaalEventOp()
-
-
-
-            if (this.IsActive == false)
-            {
-
-            }
-
             
-
-            DateTime Vandaag = DateTime.Now.Date;
-
-
-
-            NaamOverzicht.Text = lid.Naam;
-            AdresOverzicht.Text = lid.Adres;
-            EmailOverzicht.Text = lid.Email;
-            StatusOverzicht.Text = lid.Status;
-
-            GeleverdOp.Text = "Wordt geleverd op ";
-
-            LeveringsDatum.Text = Vandaag.AddDays(2).ToString();
-
-
-            Beheerder.PlaatsBestelling(lid.Email, eventN.Id);
-
         }
 
-        private void VerzendButton_Click(object sender, RoutedEventArgs e)
-        {
+        
+        
+        private void VerzendButton_Click(object sender, RoutedEventArgs e) {
 
-            
+            Event gekozenEvent = (Event)lstEvents.SelectedItem;
+
+
+            _beheerder.PlaatsBestelling(_ingelogdLid.Email, gekozenEvent.Id);
+
             MessageBox.Show("Bestelling is verzonden.");
         }
-
     }
 }

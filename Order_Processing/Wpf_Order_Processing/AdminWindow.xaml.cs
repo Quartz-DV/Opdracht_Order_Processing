@@ -22,30 +22,21 @@ namespace Wpf_Order_Processing
     /// Interaction logic for AdminWindow.xaml
     /// </summary>
     public partial class AdminWindow : Window
-    {
-
-        private static string opslagType = "COLLECTIONS";
-
-        ILidRepository Lidrepo = RepositoryFactory.GeefLidRepository(opslagType);
-        IEventRepository Eventrepo = RepositoryFactory.GeefEventRepository(opslagType);
-        IBestellingRepository Bestellingrepo = RepositoryFactory.GeefBestellingRepository(opslagType);
-
+    {        
         OrderBeheerder Beheerder;
         
 
-        public AdminWindow()
+        public AdminWindow(OrderBeheerder beheerder)
         {
-            InitializeComponent();
+            InitializeComponent();           
 
-            Beheerder = new OrderBeheerder(Lidrepo, Eventrepo, Bestellingrepo);
+            
 
-            MainWindow main = new MainWindow();
-
-            List<Bestelling> mijnBestellingen = Beheerder.HaalAlleBestellingenOp();
+            List<Bestelling> mijnBestellingen = beheerder.HaalAlleBestellingenOp();
 
 
 
-            DataGridBestellingen.ItemsSource = mijnBestellingen;
+            DataGridBestellingen.ItemsSource = beheerder.HaalAlleBestellingenOp();
         }
 
 

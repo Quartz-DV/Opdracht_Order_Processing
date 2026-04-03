@@ -8,6 +8,8 @@ namespace OrderBL.Domein
 {
     public class Bestelling
     {
+
+        public Lid Lid { get; set; }
         public bool HasDinner { get; set; }
         public bool HasWelcomePacket { get; set; }
         public bool HasNamePlate {  get; set; }
