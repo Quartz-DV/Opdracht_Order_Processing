@@ -36,7 +36,11 @@ namespace Wpf_Order_Processing
 
 
 
+<<<<<<< HEAD
             DataGridBestellingen.ItemsSource = beheerder.HaalAlleBestellingenOp();
+=======
+            //DataGridBestellingen.ItemsSource = mijnBestellingen;
+>>>>>>> bb44c21f907e5ac20cca9e792866c76c57eb1328
         }
 
 

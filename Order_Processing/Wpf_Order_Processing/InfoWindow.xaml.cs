@@ -33,6 +33,20 @@ namespace Wpf_Order_Processing {
                 GeleverdOp.Text = "Wordt geleverd op ";
                 LeveringsDatum.Text = DateTime.Now.Date.AddDays(2).ToString("dd/MM/yyyy");
             
+<<<<<<< HEAD
+=======
+            Lid lid = Beheerder.HaalLidOp(txtBoxEmail);
+            List<Event> eventN = Beheerder.GeefBeschikbareEvents();
+            Event eventB = Beheerder.HaalEventOp(1);
+
+
+
+            if (this.IsActive == false)
+            {
+
+            }
+
+>>>>>>> bb44c21f907e5ac20cca9e792866c76c57eb1328
             
         }
 
